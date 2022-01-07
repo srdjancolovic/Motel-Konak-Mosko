@@ -1,0 +1,95 @@
+.btn-modal {
+  @include button;
+  font-size: $btnXL;
+}
+.btn-modal-hide {
+  transition: all 0.4s ease;
+  opacity: 0;
+}
+.about-modal {
+  background-image: url("img/bg-1.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-radius: 30px;
+  transition: all 1s ease;
+  opacity: 0;
+  z-index: 32000;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 30px;
+    z-index: 1000;
+  }
+  .close-modal {
+    position: absolute;
+    right: 30px;
+    top: 15px;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    pointer-events: visible;
+    z-index: 32000;
+    &:hover {
+      transform: rotate(90deg);
+    }
+  }
+  .modal-text {
+    z-index: 32000;
+    @include modalText;
+    font-size: $modalTextXL;
+  }
+}
+.show-modal {
+  opacity: 1;
+  transition: all 1s ease;
+  z-index: 30000;
+}
+@media (max-width: 1200px) {
+  .btn-modal {
+    font-size: $btnMax1200;
+  }
+  .about-modal {
+    .modal-text {
+      font-size: $modalTextMax1200;
+    }
+    .close-modal {
+      top: 50px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .about-modal {
+    width: 80%;
+  }
+}
+@media (max-width: 576px) {
+  .btn-modal {
+    font-size: $btnMobile;
+  }
+  .about-modal {
+    width: 100%;
+    height: auto;
+    .modal-text {
+      padding: 50px 25px;
+      font-size: $modalTextMobile;
+    }
+    .close-modal {
+      top: 90%;
+      right: 25px;
+    }
+  }
+}

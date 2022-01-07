@@ -1,0 +1,89 @@
+#heading {
+  background-image: url("img/woodBg3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 100px;
+  border-left: 3px solid black;
+  border-bottom: 3px solid black;
+
+  .logo {
+    width: 400px;
+    height: 400px;
+    margin-bottom: 10px;
+  }
+}
+.heading-after {
+  position: relative;
+  z-index: 2000;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all 0.5s ease;
+    background: rgba(0, 0, 0, 0.5);
+  }
+}
+.arrow {
+  position: absolute;
+  animation: animateArrow 1.2s infinite alternate;
+  bottom: 10%;
+  a {
+    color: black;
+    top: 0;
+    font-size: 30px;
+  }
+}
+//Arrow animation
+@keyframes animateArrow {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}
+
+@media (max-width: 1200px) {
+  #heading {
+    height: 50vh;
+    padding-top: 0;
+    border-left: none;
+    justify-content: center;
+    .logo {
+      margin-top: -40px;
+      width: 350px;
+      height: 350px;
+      margin-bottom: 10px;
+    }
+    .arrow {
+      display: none;
+    }
+  }
+}
+@media (max-width: 768px) {
+  #heading {
+    .logo {
+      width: 250px;
+      height: 250px;
+      margin-bottom: 30px;
+    }
+  }
+}
+@media (max-width: 576px) {
+  #heading {
+    .logo {
+      width: 200px;
+      height: 200px;
+      margin-bottom: 30px;
+    }
+  }
+}

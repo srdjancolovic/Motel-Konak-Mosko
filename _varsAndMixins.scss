@@ -1,0 +1,112 @@
+////About button XL+
+$btnXL: 24px;
+$btnMax1200: 21px;
+$btnMobile: 18px;
+
+//Modal text XL+
+$modalTextXL: 20px;
+$modalTextMax1200: 19px;
+$modalTextMobile: 16px;
+
+//Menu links XL+
+$linkXL: 20px;
+$linkMobile: 18px;
+
+//SVG font size XL+
+$socNetIcon: 60px;
+$socNetIconMobile: 55px;
+
+//Heading font size XL+
+$headingFontSizeXL: 50px;
+$headingFontSizeMax768: 45px;
+$headingFontSizeMobile: 42px;
+
+//About food text
+$aboutFoodTextFontSizeXL: 20px;
+$aboutFoodTextFontSizeMax768: 19px;
+$aboutFoodTextFontSizeMobile: 17px;
+
+//Menu slider
+$h4MenuFontSizeXL: 25px;
+$mealNameFontSizeXL: 18px;
+$mealDescFontSizeXL: 16px;
+$mealPriceFontSizeXL: 20px;
+
+$h4MenuFontSizeMax768: 22px;
+$mealNameFontSizeMax768: 18px;
+$mealDescFontSizeMax768: 15px;
+$mealPriceFontSizeMax768: 19px;
+
+$h4MenuFontSizeMax576: 21px;
+$mealNameFontSizeMax576: 15px;
+$mealDescFontSizeMax576: 13px;
+$mealPriceFontSizeMax576: 17px;
+
+//Image gallery Heading Font Size
+$h3FontSizeXL: 36px;
+$h3FOntSizeMax768: 33px;
+$h3FOntSizeMobile: 32px;
+
+//Contact info text
+$contactInfoFontSizeXL: 23px;
+$contactInfoFontSizeMax768: 20px;
+$contactInfoFontSizeMobile: 18px;
+
+//////MIXINS
+@mixin modalText {
+  padding: 100px 40px 100px 40px;
+  text-align: justify;
+  transition: all 1s ease;
+  letter-spacing: 0.7px;
+  line-height: 1.6;
+  color: white;
+  font-weight: lighter;
+}
+@mixin button {
+  background: none;
+  border: 3px solid black;
+  padding: 10px 20px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 5px;
+  text-transform: uppercase;
+  transition: 0.5s ease;
+  font-size: $btnXL;
+  font-weight: bold;
+  color: black;
+  &:hover {
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+@mixin heading {
+  text-align: center;
+  padding: 40px 0;
+  font-size: $headingFontSizeXL;
+  font-weight: bold;
+  color: white;
+}
+@mixin prevAndNextSliderBtn {
+  position: absolute;
+  &::after {
+    padding: 10px 15px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 40px;
+    font-size: 30px;
+    transition: all 0.4s ease;
+    color: black;
+  }
+  &:focus {
+    outline: none;
+    border: none;
+  }
+  &:hover::after {
+    background: rgba(255, 255, 255, 0.7);
+  }
+}

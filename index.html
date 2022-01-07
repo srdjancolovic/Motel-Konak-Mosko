@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="jagnje, Mosko, Trebinje, pečenje, hotel, restoran, smjestaj, vino, Platani, Trebisnjica, hrana, meso, riba, rostilj, sunce">
+    <meta name="description" content="Motel KONAK Mosko je nadaleko preopoznatljiv po pružanju kvalitetnih usluga i čuvenoj jagnjetini sa ražnja. Posjetite nas i uživajte u najboljoj jagnjetini u Hercegovini kao i mnogim drugim specijalitetima iz naše kuhinje uz vrhunska domaća vina.  ">
+    <meta name="theme-color"content="#000000">
+    <!-- jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+
+        <!-- Animate.css -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+
+    <!-- Style css -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Icon -->
+    <link rel="shortcut icon" href="img/konakLogo.ico">
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- Lightbox CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css">
+
+    <!-- Title -->
+    <title>Motel KONAK Mosko</title>
+  </head>
+  <body>
+
+
+    <!-- Preloader -->
+    <div class="preloader">
+      <img src="img/konakLogo.png" alt="">
+    </div>
+
+
+    <!-- Home page and menu -->
+    <main>
+      <!-- Menu -->
+      <div class="menu">
+        <div class="links">
+          <ul class="link-list">
+            <li class="list-item">
+              <a href="#landing" class="link">Početna</a>
+            </li>
+            <li class="list-item"><a href="#food-menu" class="link">Jelovnik</a></li>
+            <li class="list-item">
+              <a href="#image-gallery" class="link">Galerija slika</a>
+            </li>
+            <li class="list-item"><a href="#contact" class="link">Kontakt</a></li>
+            
+          </ul>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/MotelKonakMosko/" target="blank"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://www.instagram.com/motelkonakmosko/?hl=en" target="blank"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="open-close " data-animation="fadeInRight"
+        data-delay=".9s">
+          <div class="bar top"></div>
+          <div class="bar middle"></div>
+          <div class="bar bottom"></div>
+        </div>
+      </div>
+
+
+      <!-- Image Slider on home page -->
+      <div class="landing" id="landing">
+        <div class="container-fluid">
+          <div class="row">
+            <div id="img-slider" class="col-lg-12 col-xl-6">
+              <!-- Swiper -->
+              <div class="swiper landing-page-slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="img/bg-1.jpg" alt="mosko" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/k4.jpg" alt="konoba" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/r4.jpg" alt="terasa" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/t2.jpg" alt="terasa" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/sb3.jpg" alt="hotel" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/s11.jpg" alt="salon" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/t6.jpg" alt="jagnje" />
+                  </div>
+                </div>
+                <div class="prev-next-btn">
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Heading/Logo/About btn section -->
+            <div id="heading" class=" col-lg-12 col-xl-6">
+              <img src="img/konakLogo.png" class="logo " alt="logo konak"/>
+              
+              <button class="btn-modal os-animation" data-animation="fadeInUp"
+              data-delay="1s">O nama</button>
+              <div class="arrow">
+                <a href="#food-menu" class="arrow"
+                  ><i class="fas fa-arrow-down"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- About modal -->
+        <article class="about-modal">
+          <span class="close-modal"><i class="fas fa-times"></i></span>
+          <p class="modal-text">
+            Objekat je počeo sa radom 1972. godine pod nazivom "Lovac". Od svog otvaranja, pa do danas njeguje i nudi svojim gostima hercegovačke specijalitete. Ono po čemu je restoran prepoznatljiv je jagnjetina sa ražnja, koja je ujedno specijaltet kuće. Sam objekat je izgrađen u hercegovačkom stilu sa moderno uređenim unutrašnjim enterijerom. <br> U sastavu objekta nalazi se restoran koji raspolaže sa oko 250 mjesta, od toga 100 mjesta u zatvorenom dijelu i 150 mjesta rasporedjenih na tri terase. Pored restorana nalazi se Hercegovačka kuća, jedinstvena na području Hercegovine zbog autentičnog ambijenta kapaciteta 80 mjesta, te sala za slavlja, prezentacije i kongrese sa 500 mjesta. U sklopu objekta se nalazi i hotel koji raspolaže sa 170 ležajeva raspoređenih u jednokrevetnim, dvokrevetnim, trokrevetnim, čevterokrevetnim sobama i apartmanom.
+          </p>
+        </article>
+      </div>
+    </main>
+    <!-- FOOD MENU -->
+    <section id="food-menu">
+      <div class="container-fluid" >
+        <div class="row">
+          <!-- Heading -->
+          <div class="col-md-12 " id="heading-one">
+            <h2 class="heading os-animation" data-animation="fadeInUp"
+            data-delay=".5s">Jelovnik</h2>
+          </div>
+
+          <!-- About food menu text -->
+          <div class="col-lg-12 col-xl-6 os-animation" data-animation="fadeInLeft"
+          data-delay=".7s" id="about-food">
+            <h3 class="about-food-heading">Naši specijaliteti</h3>
+            <article class="text">
+              Specijalitet kuće je pečena jagnjetina sa ražnja. Od samog početka rada davne 1972. godine, postali smo prepoznatljivi po kvalitetu usluge i čuvenoj jagnjetini. Pored pečenja, restoran nudi autohtona hercegovačka jela, ribu i jela sa roštilja. U našem jelovniku možete pogledati kompletnu ponudu naše kuhinje. 
+            </article>
+            <a href="#image-gallery" class="gallery-btn link">Galerija slika</a>
+            <!-- <button class="gallery-btn link">Galerija slika</button> -->
+          </div>
+          <!-- Food menu slider -->
+          <div class="col-lg-12 col-xl-6 " "  id="menu-slider">
+            <div class="swiper food-menu-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide" id="food-menu-cover">
+                  <img src="img/konakLogo.png" alt="logo konak">
+                  <h3>Karta jela</h3>
+                </div>
+
+                <!-- Slide 1 -->
+                 <div class="swiper-slide">
+                   <h4>Sve cijene su izražene u KM  </h4>
+                  <h4>Hladna predjela</h4>
+                  <div class="meals">
+                    <div class="meal">
+                      <div class="meal-info">
+                        <p class="meal-name">Hercegovačka plata</p>
+                      </div>
+                      <p class="meal-price">20.00</p>
+                    </div>
+
+                    <div class="meal">
+                      <div class="meal-info">
+                        <p class="meal-name">Pršut <span>100g</span></p>
+                      </div>
+                      <p class="meal-price">10.00</p>
+                    </div>
+
+                    <div class="meal">
+                      <div class="meal-info">
+                        <p class="meal-name">Jagnjeće kopsica <span>100g</span></p>
+                        
+                      </div>
+                      <p class="meal-price">10.00</p>
+                    </div>
+
+                    <div class="meal">
+                      <div class="meal-info">
+                        <p class="meal-name">
+                          Sir <span>100g</span>
+                        </p>
+                        
+                      </div>
+                      <p class="meal-price">5.00</p>
+                    </div>
+
+                    <div class="meal">
+                      <div class="meal-info">
+                        <p class="meal-name">Sir iz ulja <span>100g</span></p>
+                        
+                      </div>
+                      <p class="meal-price">5.00</p>
+                    </div>
+
+                    <div class="meal ">
+                      <div class="meal-info">
+                        <p class="meal-name">Sir iz mijeha <span>100g</span></p>
+                      </div>
+                      <p class="meal-price ">5.00</p>
+                    </div>
+
+                    <div class="meal ">
+                      <div class="meal-info">
+                        <p class="meal-name">
+                          Kajmak <span>100g</span>
+                        </p>
+                      </div>
+                      <p class="meal-price ">5.00</p>
+                    </div>
+                  </div>
+                </div> 
+
+                <!-- SLIDE 2 -->
+
+                 <div class="swiper-slide" >
+                  <h4>Topla predjela</h4>
+                  <div class="meals">
+                    <div class="meal">
+                      <div class="meal-info">
+                        <p class="meal-name">Omleti</p>
+
+                      </div>
+                      <p class="meal-price">5.00</p>
+                    </div>
+
+                    <div class="meal">
+                      <div class="meal-info">
+                        <p class="meal-name">Cicvara</p>
+                      </div>
+                      <p class="meal-price">5.00</p>
+                    </div>
+                    <div class="meal">
+                      <div class="meal-info">
+                        <p class="meal-name">Pohovani sir</p>
+                      </div>
+                      <p class="meal-price">7.00</p>
+                    </div>
+
+                    <div class="meal">
+                      <div class="meal-info">
+                        <p class="meal-name">Prijesnac </p>
+                        <p class="meal-desc">(3 osobe / 5 osoba)</p>
+
+                      </div>
+                      <p class="meal-price">12.00  / <br> 20.00 </p>
+                    </div>
+                    
+                     <h4>Čorbe</h4>
+
+                    <div class="meal">
+                      <div class="meal-info">
+                        <p class="meal-name">Teleća čorba </p>
+                        
+                      </div>
+                      <p class="meal-price">4.00</p>
+                    </div>
+
+                    <div class="meal">
+                      <div class="meal-info">
+                        <p class="meal-name">
+                         Jagnjeća čorba
+                        </p>
+                      </div>
+                      <p class="meal-price">4.00</p>
+                    </div>
+
+                    <div class="meal">
+                      <div class="meal-info">
+                        <p class="meal-name">Riblja čorba</p>
+                        
+                      </div>
+                      <p class="meal-price">4.00</p>
+                    </div>
+
+                    <div class="meal">
+                      <div class="meal-info">
+                        <p class="meal-name">Ćorba od koprive</p>
+                        
+                      </div>
+                      <p class="meal-price">4.00</p>
+                    </div>
+                  </div>
+                </div> 
+
+                <!-- Slide 3 -->
+
+                 <div class="swiper-slide">
+                  <h4>Pečenje</h4>
+                  <div class="meals">
+                    <div class="meal">
+                      <div class="meal-info">
+                        <p class="meal-name">Jagnjeće pečenje <span>1kg</span></p>
+                      </div>
+                      <p class="meal-price">33.00</p>
+                    </div>
+
+                    <div class="meal">
+                      <div class="meal-info">
+                        <p class="meal-name">Teleće pečenje <span>1kg</span></p>
+                      </div>
+                      <p class="meal-price">33.00</p>
+                    </div>
+
+                    <div class="meal">
+                      <div class="meal-info">
+                        <p class="meal-name">Kaštradina <span>1kg</span></p>
+                      </div>
+                      <p class="meal-price">35.00</p>
+                    </div>
+                    
+                    <h4>Jela po narudžbi</h4>
+
+                    <div class="meal">
+                      <div class="meal-info">
+                        <p class="meal-name">Biftek na žaru</p>
+                        
+                      </div>
+                      <p class="meal-price">25.00 </p>
+                    </div>
+
+                    <div class="meal">
+                      <div class="meal-info">
+                        <p class="meal-name">Teleći medaljoni</p>
+                        
+                      </div>
+                      <p class="meal-price">15.00 </p>
+                    </div>
+
+                    <div class="meal">
+                      <div class="meal-info">
+                        <p class="meal-name">Karađorđeva šnicla </p>
+                        <p class="meal-desc">Svinjska (mala / velika)</p>
+                      </div>
+                      <p class="meal-price">10.00 / <br> 14.00 </p>
+                    </div>
+                    
+                    <div class="meal">
+                      <div class="meal-info">
+                        <p class="meal-name">Karađorđeva šnicla </p>
+                        <p class="meal-desc">Teleća (mala / velika)</p>
+                      </div>
+                      <p class="meal-price">12.00 / <br> 16.00 </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 4 -->
+
+                 <div class="swiper-slide">
+                  <h4>Jela po narudžbi</h4>
+                  <div class="meals">
+
+                    <div class="meal">
+                      <div class="meal-info">
+                        <p class="meal-name">Njeguški stek</p>
+                        
+                      </div>
+                      <p class="meal-price">14.00 </p>
+                    </div>
+
+                    <div class="meal">
+                      <div class="meal-info">
+                        <p class="meal-name">Natur šnicla </p>
+                        
+                      </div>
+                      <p class="meal-price">12.00 </p>
+                    </div>
+
+                    <div class="meal">
+                      <div class="meal-info">
+                        <p class="meal-name">Natur šnicla sa gljivama</p>
+                        
+                      </div>
+                      <p class="meal-price">14.00 </p>
+                    </div>
+
+                    <div class="meal">
+                      <div class="meal-info">
+                        <p class="meal-name">Punjena rolovana piletina</p>
+                        <p class="meal-desc">(mala / velika)</p>
+
+                        
+                      </div>
+                      <p class="meal-price">10.00 / <br> 15.00 </p>
+                    </div>
+
+                    <div class="meal">
+                      <div class="meal-info">
+                        <p class="meal-name">Pileći fileti</p>
+                        
+                      </div>
+                      <p class="meal-price">10.00 </p>
+                    </div>
+
+                    <div class="meal">
+                      <div class="meal-info">
+                        <p class="meal-name">Pileći batal</p>
+                        
+                      </div>
+                      <p class="meal-price">10.00 </p>
+                    </div>
+
+                    <div class="meal">
+                      <div class="meal-info">
+                        <p class="meal-name">Mješano meso</p>
+                        
+                      </div>
+                      <p class="meal-price">14.00 </p>
+                    </div>
+
+                    <div class="meal">
+                      <div class="meal-info">
+                        <p class="meal-name">Ražnjići</p>
+                        
+                      </div>
+                      <p class="meal-price">10.00 </p>
+                    </div>
+
+                    <div class="meal">
+                      <div class="meal-info">
+                        <p class="meal-name">Svinjski kotlet</p>
+                        
+                      </div>
+                      <p class="meal-price">10.00 </p>
+                    </div>
+
+                    <div class="meal">
+                      <div class="meal-info">
+                        <p class="meal-name">Jagnjeća džigarica</p>
+                        
+                      </div>
+                      <p class="meal-price">10.00 </p>
+                    </div>
+                  </div>
+                </div> 
+
+                <!-- Slide 5 -->
+
+                 <div class="swiper-slide">
+                  <h4>Jela po narudžbi</h4>
+                  <div class="meals">
+                    <div class="meal">
+                      <div class="meal-info">
+                        <p class="meal-name">Pljeskavica na žaru</p>
+                      </div>
+                      <p class="meal-price">10.00 </p>
+                    </div>
+
+                    <div class="meal">
+                      <div class="meal-info">
+                        <p class="meal-name">Punjena pljeskavica</p>
+                      </div>
+                      <p class="meal-price">12.00 </p>
+                    </div>
+
+                    <div class="meal">
+                      <div class="meal-info">
+                        <p class="meal-name">Gurmanska pljeskavica</p>
+                      </div>
+                      <p class="meal-price">12.00 </p>
+                    </div>
+
+                    <div class="meal">
+                      <div class="meal-info">
+                        <p class="meal-name">Ćevapi</p>
+                        <p class="meal-desc">(5 kom / 10 kom)</p>
+                      </div>
+                      <p class="meal-price">7.00 / <br> 10.00 </p>
+                    </div>
+
+                    <div class="meal">
+                      <div class="meal-info">
+                        <p class="meal-name">Kobasica</p>
+                      </div>
+                      <p class="meal-price">10.00 </p>
+                    </div>
+
+                  <h4>Ribe</h4>
+                  <div class="meal">
+                    <div class="meal-info">
+                      <p class="meal-name">Som</p>
+                    </div>
+                    <p class="meal-price">12.00 </p>
+                  </div>
+
+                  <div class="meal">
+                    <div class="meal-info">
+                      <p class="meal-name">Šaran</p>
+                    </div>
+                    <p class="meal-price">12.00 </p>
+                  </div>
+
+                  <div class="meal">
+                    <div class="meal-info">
+                      <p class="meal-name">Dimljeni šaran</p>
+                    </div>
+                    <p class="meal-price">15.00 </p>
+                  </div>
+
+                  </div>
+                </div> 
+
+                <!-- Slide 6 -->
+
+                 <div class="swiper-slide">
+                  <h4>Ribe</h4>
+                  <div class="meals">
+
+                    <div class="meal">
+                      <div class="meal-info">
+                        <p class="meal-name">Pastrmka na žaru</p>
+                      </div>
+                      <p class="meal-price">12.00 </p>
+                    </div>
+
+                    <div class="meal">
+                      <div class="meal-info">
+                        <p class="meal-name">Lignje po izboru</p>
+                      </div>
+                      <p class="meal-price">14.00 </p>
+                    </div>
+
+                    <div class="meal">
+                      <div class="meal-info">
+                        <p class="meal-name">Tuna stek</p>
+                      </div>
+                      <p class="meal-price">25.00 </p>
+                    </div>
+
+                    <div class="meal">
+                      <div class="meal-info">
+                        <p class="meal-name">Smuđ</p>
+                      </div>
+                      <p class="meal-price">15.00 </p>
+                    </div>
+
+                    <h4>Salate</h4>
+                    <div class="meals">
+  
+                      <div class="meal">
+                        <div class="meal-info">
+                          <p class="meal-name">Šopska salata</p>
+                        </div>
+                        <p class="meal-price">4.00 </p>
+                      </div>
+  
+                      <div class="meal">
+                        <div class="meal-info">
+                          <p class="meal-name">Srpska salata</p>
+                        </div>
+                        <p class="meal-price">3.00 </p>
+                      </div>
+  
+                      <div class="meal">
+                        <div class="meal-info">
+                          <p class="meal-name">Sezonska salata</p>
+                        </div>
+                        <p class="meal-price">3.00 </p>
+                      </div>
+  
+                      <div class="meal">
+                        <div class="meal-info">
+                          <p class="meal-name">Svježi krastavac</p>
+                        </div>
+                        <p class="meal-price">3.00 </p>
+                      </div>
+
+                  </div>
+                </div> 
+                 </div>
+
+                <!-- Slide 7 -->
+
+                 <div class="swiper-slide">
+                  <h4>Salate</h4>
+                  <div class="meals">
+                    <div class="meal">
+                      <div class="meal-info">
+                        <p class="meal-name">Slatki kupus</p>
+                      </div>
+                      <p class="meal-price">3.00 </p>
+                    </div>
+
+                    <div class="meal">
+                      <div class="meal-info">
+                        <p class="meal-name">Zelena salata</p>
+                      </div>
+                      <p class="meal-price">3.00 </p>
+                    </div>
+
+                    <div class="meal">
+                      <div class="meal-info">
+                        <p class="meal-name">Paradajz</p>
+                      </div>
+                      <p class="meal-price">3.00 </p>
+                    </div>
+
+                    <div class="meal">
+                      <div class="meal-info">
+                        <p class="meal-name">Mješana salata</p>
+                      </div>
+                      <p class="meal-price">3.00 </p>
+                    </div>
+
+                    <div class="meal">
+                      <div class="meal-info">
+                        <p class="meal-name">Kiseli kupus</p>
+                      </div>
+                      <p class="meal-price">3.00 </p>
+                    </div>
+
+                    <div class="meal">
+                      <div class="meal-info">
+                        <p class="meal-name">Mladi luk</p>
+                      </div>
+                      <p class="meal-price">3.00 </p>
+                    </div>
+
+                    <div class="meal">
+                      <div class="meal-info">
+                        <p class="meal-name">Kisela paprika</p>
+                      </div>
+                      <p class="meal-price">3.00 </p>
+                    </div>
+
+                    <div class="meal">
+                      <div class="meal-info">
+                        <p class="meal-name">Pečena paprika</p>
+                      </div>
+                      <p class="meal-price">3.00 </p>
+                    </div>
+
+                    <div class="meal">
+                      <div class="meal-info">
+                        <p class="meal-name">Ljuta pečena paprika</p>
+                      </div>
+                      <p class="meal-price">2.00 </p>
+                    </div>
+
+                    <div class="meal">
+                      <div class="meal-info">
+                        <p class="meal-name">Ljuta paprika</p>
+                      <p class="meal-desc">Komad</p>
+
+                      </div>
+                      <p class="meal-price">1.50 </p>
+
+                    </div>
+                    
+                  </div>
+                </div> 
+
+                <!-- Slide 8 -->
+
+                <div class="swiper-slide">
+                  <h4>Prilozi</h4>
+                  <div class="meals">
+                    <div class="meal">
+                      <div class="meal-info">
+                        <p class="meal-name">Pomfrit</p>
+                      </div>
+                      <p class="meal-price">2.00 </p>
+                    </div>
+
+                    <div class="meal">
+                      <div class="meal-info">
+                        <p class="meal-name">Riža</p>
+                      </div>
+                      <p class="meal-price">2.00 </p>
+                    </div>
+
+                    <div class="meal">
+                      <div class="meal-info">
+                        <p class="meal-name">Grašak</p>
+                      </div>
+                      <p class="meal-price">2.00 </p>
+                    </div>
+
+                    <div class="meal">
+                      <div class="meal-info">
+                        <p class="meal-name">Blitva</p>
+                      </div>
+                      <p class="meal-price">2.00 </p>
+                    </div>
+
+                    <div class="meal">
+                      <div class="meal-info">
+                        <p class="meal-name">Priganice</p>
+                      </div>
+                      <p class="meal-price">2.00 </p>
+                    </div>
+
+                    <div class="meal">
+                      <div class="meal-info">
+                        <p class="meal-name">Krompir</p>
+                      </div>
+                      <p class="meal-price">1.00 </p>
+                    </div>
+                    
+                  <h4>Deserti</h4>
+                  <div class="meal">
+                    <div class="meal-info">
+                      <p class="meal-name">Palačinke</p>
+                      <p class="meal-desc">Eurokrem / plazma, eurokrem, orasi, šećer, čokolada, džem, </p>
+                    </div>
+                    <p class="meal-price">3.00 </p>
+                  </div>
+
+                  <div class="meal">
+                    <div class="meal-info">
+                      <p class="meal-name">Baklava</p>
+                    </div>
+                    <p class="meal-price">2.00 </p>
+                  </div>
+
+                  </div>
+                </div>
+
+              </div>
+              <div class="swiper-button-next next"></div>
+              <div class="swiper-button-prev prev"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Food image gallery -->
+    <section id="image-gallery">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="heading os-animation" data-animation="fadeInUp" data-delay=".5s">Galerija slika</h2>
+          </div>
+          <div class="col-md-12" id="images-slider">
+            <div class="swiper gallery-slider">
+              <div class="swiper-wrapper">
+
+                <!-- Restaurant slide -->
+                <div class="swiper-slide os-animation" data-animation="fadeInLeft" data-delay=".5s">
+                  <a href="img/t1.jpg" data-lightbox="restoran" data-title="Restoran">
+                    <img src="img/t1.jpg" alt="restoran" class="gallery__img first__gallery__img" >
+                    <h3 class="gallery__name">Restoran</h3>
+                </a>
+                <a href="img/t2.jpg" data-lightbox="restoran" data-title="Restoran">
+                </a>
+                <a href="img/t3.jpg" data-lightbox="restoran" data-title="Restoran">
+                </a>
+                <a href="img/t4.jpg" data-lightbox="restoran" data-title="Restoran">
+                </a>
+                <a href="img/t5.jpg" data-lightbox="restoran" data-title="Restoran">
+                </a>
+                <a href="img/t6.jpg" data-lightbox="restoran" data-title="Restoran">
+                </a>
+                <a href="img/t7.jpg" data-lightbox="restoran" data-title="Restoran">
+                </a>
+                <a href="img/r1.jpg" data-lightbox="restoran" data-title="Restoran">
+                </a>
+                <a href="img/r2.jpg" data-lightbox="restoran" data-title="Restoran">
+                </a>
+                <a href="img/r3.jpg" data-lightbox="restoran" data-title="Restoran">
+                </a>
+                <a href="img/r4.jpg" data-lightbox="restoran" data-title="Restoran">
+                </a>
+                <a href="img/r5.jpg" data-lightbox="restoran" data-title="Restoran">
+                </a>
+                <a href="img/r6.jpg" data-lightbox="restoran" data-title="Restoran">
+                </a>
+                <a href="img/r7.jpg" data-lightbox="restoran" data-title="Restoran">
+                </a>
+                <a href="img/r8.jpg" data-lightbox="restoran" data-title="Restoran">
+                </a>
+                  
+                </div>
+
+                <!-- Konoba slide -->
+                <div class="swiper-slide os-animation" data-animation="fadeInUp" data-delay=".5s">
+                  <a href="img/k2.jpg" data-lightbox="Konoba" data-title="Konoba">
+                    <img src="img/k2.jpg" alt="konoba" class="gallery__img first__gallery__img" >
+                    <h3 class="gallery__name">Konoba</h3>
+                </a>
+                <a href="img/k3.jpg" data-lightbox="Konoba" data-title="Konoba">
+                </a>
+                <a href="img/k4.jpg" data-lightbox="Konoba" data-title="Konoba">
+                </a>
+                <a href="img/k5.jpg" data-lightbox="Konoba" data-title="Konoba">
+                </a>
+                <a href="img/k6.jpg" data-lightbox="Konoba" data-title="Konoba">
+                </a>
+                <a href="img/k7.jpg" data-lightbox="Konoba" data-title="Konoba">
+                </a>
+                <a href="img/k8.jpg" data-lightbox="Konoba" data-title="Konoba">
+                </a>
+                <a href="img/k9.jpg" data-lightbox="Konoba" data-title="Konoba">
+                </a>
+                <a href="img/k10.jpg" data-lightbox="Konoba" data-title="Konoba">
+                </a>
+                <a href="img/k11.jpg" data-lightbox="Konoba" data-title="Konoba">
+                </a>
+                <a href="img/k12.jpg" data-lightbox="Konoba" data-title="Konoba">
+                </a>
+                </div>
+
+                <!-- Hotel slide -->
+                <div class="swiper-slide os-animation" data-animation="fadeInRight" data-delay=".5s">
+                  <a href="img/sb3.jpg" data-lightbox="Hotel" data-title="Hotel">
+                    <img src="img/sb3.jpg" alt="hotel" class="gallery__img first__gallery__img" >
+                    <h3 class="gallery__name">Hotel</h3>
+                </a>
+                <a href="img/sb2.jpg" data-lightbox="Hotel" data-title="Hotel">
+                </a>
+                <a href="img/sb1.jpg" data-lightbox="Hotel" data-title="Hotel">
+                </a>
+                <a href="img/sb4.jpeg" data-lightbox="Hotel" data-title="Hotel">
+                </a>
+                <a href="img/sb5.jpg" data-lightbox="Hotel" data-title="Hotel">
+                </a>
+                <a href="img/sb6.jpg" data-lightbox="Hotel" data-title="Hotel">
+                </a>
+                <a href="img/sb7.jpg" data-lightbox="Hotel" data-title="Hotel">
+                </a>
+                <a href="img/sb8.jpg" data-lightbox="Hotel" data-title="Hotel">
+                </a>
+                </div>
+
+
+                <!-- Saloon slide -->
+                <div class="swiper-slide">
+                  <a href="img/s11.jpg" data-lightbox="Salon" data-title="Salon">
+                    <img src="img/s11.jpg" alt="salon" class="gallery__img first__gallery__img" >
+                    <h3 class="gallery__name">Salon</h3>
+                </a>
+                <a href="img/s22.jpg" data-lightbox="Salon" data-title="Salon">
+                </a>
+                <a href="img/s33.jpg" data-lightbox="Salon" data-title="Salon">
+                </a>
+                <a href="img/s44.jpg" data-lightbox="Salon" data-title="Salon">
+                </a>
+                <a href="img/s55.jpg" data-lightbox="Salon" data-title="Salon">
+                </a>
+                <a href="img/s66.jpg" data-lightbox="Salon" data-title="Salon">
+                </a>
+                <a href="img/s78.jpg" data-lightbox="Salon" data-title="Salon">
+                </a>
+                <a href="img/s88.jpg" data-lightbox="Salon" data-title="Salon">
+                </a>
+                <a href="img/s99.jpg" data-lightbox="Salon" data-title="Salon">
+                </a>
+                <a href="img/s111.jpg" data-lightbox="Salon" data-title="Salon">
+                </a>
+                <a href="img/s12.jpg" data-lightbox="Salon" data-title="Salon">
+                </a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next next-sl  "></div>
+            <div class="swiper-button-prev prev-sl "></div>
+          </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    
+    <section id="contact">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12 ">
+            <h2 class="heading os-animation" data-animation="fadeInUp" data-delay=".5s">Kontakt</h2>
+          </div>
+          <div class="contact__boxes__wrapper">
+            <div class="box contact__info os-animation" data-animation="fadeInLeft" data-delay=".6s" >
+              <h4 class="contact__info__heading">Kontakt Info</h4>
+              <ul class="nums">
+                <li class="num">+387 59 481-288</li>
+                <li class="num">+387 65 520-082</li>
+                <li class="num">+387 65 520-297</li>
+              </ul>
+              <a href="mailto:motelkonak@yahoo.com">motelkonak@yahoo.com</a>
+            </div>
+            <div class="box map os-animation" data-animation="fadeInRight" data-delay=".6s">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2928.90775628887!2d18.39716821546934!3d42.76915607916152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134c67bec073b9b7%3A0x3335dec19b2051d1!2sKonak%20Motel!5e0!3m2!1sen!2sba!4v1640900995956!5m2!1sen!2sba" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="signature">
+        <h6>©2021. Motel KONAK Mosko</h6>
+        <h6>Website by Srdjan Colovic</h6>
+      </div>
+    </section>
+
+    <!-- Script -->
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Script JS -->
+    <!-- Font awsome -->
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js "></script>
+    <!-- Lightbox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js "></script>
+
+    <!-- JavaScript file -->
+    <script src="script.js"></script>
+  </body>
+</html>

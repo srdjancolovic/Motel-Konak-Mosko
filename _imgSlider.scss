@@ -1,0 +1,119 @@
+#img-slider {
+  height: 100vh;
+  width: 50%;
+  padding: 0;
+  .swiper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    .swiper-wrapper {
+      .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+    .swiper-wrapper-after {
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        transition: all 0.5s ease;
+        background: rgba(0, 0, 0, 0.5);
+      }
+    }
+
+    .prev-next-btn {
+      position: absolute;
+      top: 50%;
+      right: 1%;
+      padding: 10px;
+      .swiper-button-next {
+        @include prevAndNextSliderBtn;
+        top: 70px;
+        right: 8px;
+        &::after {
+          transform: rotate(90deg);
+          &:focus {
+            outline: none;
+            border: none;
+          }
+        }
+      }
+      .swiper-button-prev {
+        @include prevAndNextSliderBtn;
+        top: -70px;
+        right: 8px;
+        &::after {
+          position: absolute;
+          transform: rotate(90deg);
+          right: 15px;
+        }
+        &:hover::after {
+          background: rgba(255, 255, 255, 0.7);
+        }
+      }
+    }
+  }
+  .landing-page-slider {
+    border-bottom: 3px solid black;
+  }
+  .swiper-after {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      transition: all 0.5s ease;
+      background: rgba(0, 0, 0, 0.5);
+    }
+  }
+}
+@media (max-width: 1200px) {
+  main {
+    #img-slider {
+      height: 50vh;
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 576px) {
+  #img-slider {
+    .swiper {
+      .prev-next-btn {
+        top: 90%;
+        right: 50%;
+        .swiper-button-next {
+          top: 0;
+          right: -80px;
+          &::after {
+            transform: rotate(0deg);
+            padding: 8px 13px;
+            font-size: 20px;
+          }
+        }
+        .swiper-button-prev {
+          top: 0;
+          &::after {
+            transform: rotate(0);
+            padding: 8px 13px;
+            font-size: 20px;
+            right: 55px;
+          }
+        }
+      }
+    }
+  }
+}

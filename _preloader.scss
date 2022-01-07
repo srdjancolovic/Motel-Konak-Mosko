@@ -1,0 +1,29 @@
+.preloader {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1.5s;
+  z-index: 100000;
+  background: white;
+  img {
+    width: 250px;
+    animation: preloadAnimation 1s infinite alternate;
+  }
+}
+.hide-preloader {
+  opacity: 0;
+  z-index: -50;
+}
+@keyframes preloadAnimation {
+  0% {
+    transform: scale(0.98);
+  }
+  100% {
+    transform: scale(1.03);
+  }
+}
